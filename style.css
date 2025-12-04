@@ -42,7 +42,7 @@ p {
 
 html,
 body {
-  height: 100vh;
+  height: calc(100vh + 1px);
   background-color: #000;
   margin: 0;
   padding: 0;
