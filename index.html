@@ -19,21 +19,29 @@
 </head>
 
 <body>
+  <div class="page-wrapper">
+    <div class="container">
 
-  <div class="container">
-
-    <header>
-      <img src="./assets/skull.png" alt="Boney the skeleton mascot">
-      <h1>Este es Don Parietto</h1>
-      <h3>¡No termines como él!</h3>
-    </header>
-    <main>
-      <p id="warning-prediction">
-        <span class="loading-text"> Loading </span>
-      </p>
-    </main>
+      <header>
+        <img src="./assets/skull.png" alt="Boney the skeleton mascot">
+        <h1>Este es Don Parietto</h1>
+        <h3>¡No termines como él!</h3>
+      </header>
+      <main>
+        <p id="warning-prediction">
+          <span class="loading-text"> Loading </span>
+        </p>
+      </main>
+    </div>
   </div>
 
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        window.scrollTo(0, 50);
+      }, 50);
+    });
+  </script>
   <script src="./scripts.js"></script>
 </body>
 
