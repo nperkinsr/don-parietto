@@ -1,0 +1,99 @@
+/* =========================
+   Root Variables & Resets
+   ========================= */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --color1: #acb1cc;
+  --color2: #eff3f9;
+  --color4: #62638d;
+  --color3: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: var(--color4);
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: var(--white);
+  background-color: var(--color1);
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin: auto;
+  font-size: 1rem;
+}
+
+p {
+  color: var(--black);
+  font-size: 1.1rem;
+  margin: 1.5rem;
+}
+
+html,
+body {
+  height: 100vh;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  background-image: url("assets/seamless_dark_pattern.png");
+  background-repeat: repeat;
+  background-size: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px var(--color3);
+  border: 2px solid var(--color3);
+  margin: 20px;
+  max-width: 500px;
+}
+
+img {
+  width: 60%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loading-text {
+  opacity: 0;
+}
+
+.warning-text {
+  opacity: 0;
+}
+
+.warning-text.fade-in {
+  animation: fadeIn 2s forwards;
+}
+
+#warning-prediction {
+  min-height: 2.5em;
+  line-height: 1.3em;
+  display: flex;
+}
